@@ -1,0 +1,64 @@
+1.  Print the gene name (column Locus) and size (column: Length) of the smallest protein in the genome.
+
+	Locus: trpL	Length: 14
+	Locus: pheM	Length: 14
+
+2.  Print the gene name (column Locus) and size (column: Length) of the largest protein in the genome.
+
+	Locus: yeeJ	Length: 2358
+
+3.  Print the gene name (column Locus), positions (columns Start and Stop) and strand (column Strand) of the 15th to 20th genes in the order they  appear in the chromosome.
+
+	Locus:		Start:		Stop:		Strand:
+	insL1		15445		16557		+
+	hokC		16751		16903		-
+	mokC		16751		16960		-
+	nhaA		17489		18655		+
+	nhaR		18715		19620		+
+	insB1		19811		20314		-
+
+4.  Print the gene name, strand, positions of all genes sorted by:
+      a) Strand, left position  
+		output-4a.tsv
+      b) Strand, size and left position (column Start).
+		output-4b.tsv
+      NOTE: This is sorting by more than one column (very useful!).
+
+5.  How many different enzymes are there in the genome (use column Protein_name)?
+	84  
+
+6.  How many enzymes of each type are there? For simplicity, assume that if the enzyme name is not identical between two enzymes, they belong different types.
+	??
+
+7.  How many transporters are there in the genome (use column Protein_name)?
+	389
+
+8.  What is the name, strand and length of largest transporter in the genome?
+	Name:		Strand:		Length:
+	ypjA		-		1526
+
+9.  What is the name, strand and length of shortest transporter?
+	Name:		Strand:		Length:
+	kdpF		-		29
+
+10. How many operons (larger than 2 genes) are there in the genome?
+      NOTE: use the first 3 letters of the gene name (column Locus) to identify operons. Assume that if two genes share the first 3 letters of the gene name, they belong to the same operon.
+	638
+
+11. What is the largest operon in the genome?
+	ins with 56 genes
+
+12. a) How many ABC transporters are there in the genome (use column Protein_name)?
+		172
+    b) How many are there in the reverse and forward strands?
+		102 in reverse and 70 in forward
+    c) What are the largest and smallest ABC transporters in each strand? 
+		Forward:
+			chr,NC_000913.3,3343380,3343937,+,947920,lptA,b3200,NP_417667.1,185,-,lipopolysaccharide export ABC transporter periplasmic binding protein; Lipid A binding protein; LPS export and assembly protein
+			chr,NC_000913.3,520416,522830,+,945118,ybbP,b0496,NP_415029.1,804,-,putative ABC transporter permease
+		Reverse:
+			chr,NC_000913.3,2295377,2295586,-,946709,ccmD,b2198,NP_416702.1,69,-,cytochrome c biogenesis protein; heme export ABC transporter holo-CcmE release factor
+			chr,NC_000913.3,929196,930962,-,949052,cydD,b0887,NP_415407.1,588,-,glutathione/cysteine ABC transporter export permease/ATPase
+
+     
+ 
